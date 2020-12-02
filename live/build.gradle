@@ -13,24 +13,19 @@ repositories {
 }
 
 dependencies {
+	compile group: 'org.hibernate', name:'hibernate-validator', version: '6.1.6.Final'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	developmentOnly'org.springframework.boot:spring-boot-devtools'
-
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.7'
-
+	compile group: 'io.druid', name: 'druid-common', version: '0.9.2'
 	runtimeOnly 'mysql:mysql-connector-java'
-
 	compileOnly 'org.projectlombok:lombok:1.18.10'
 	annotationProcessor 'org.projectlombok:lombok'
-
-	compile group: 'io.springfox', name: 'springfox-swagger-2', version: '2.9.2'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
 	compile group: 'io.springfox', name: 'springfox-bean-validators', version: '2.9.2'
-
 	compile group: 'org.hibernate', name: 'hibernate-envers', version: '5.4.17.Final'
 	compile group: 'org.hibernate', name: 'hibernate-validators', version: '6.1.17.Final'
-
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
